@@ -622,3 +622,38 @@ section#gallery .container .col.parent {
     background: var(--french-gray);
     aspect-ratio: 9 / 6;
 }
+
+section#profiles .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: min(100%, 900px);
+    margin: auto;
+}
+
+.profile {
+    width: 250px;
+    /* margin: 10px; */
+    box-shadow: 1px 1px 10px #00000060;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile .image__container {
+    aspect-ratio: 1;
+    background: var(--oxford-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .image__container img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.profile .label {
+    padding: 10px;
+}
