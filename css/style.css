@@ -452,6 +452,22 @@ section#about .image__container {
 .feedback .quotes {
     font-size: 2.5rem;
     color: #00000060;
+    text-align: center;
+    margin: auto;
+}
+
+.feedback .image__container {
+    width: 90px;
+    aspect-ratio: 1;
+    background: #83838320;
+    backdrop-filter: blur(30px);
+    margin: 5px auto;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section#customer-feedback .container {
