@@ -432,6 +432,11 @@ footer .buttons a:hover {
     color: white;
 }
 
+section#about .image__container {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
 /* customer feedback */
 .feedback {
     width: min(98%, 250px);
@@ -456,6 +461,92 @@ section#customer-feedback .container {
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px;
+}
+
+/* feedback form */
+section#feedback .container {
+    width: 100%;
+    background: var(--french-gray);
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+section#feedback .container h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#feedback .container form {
+    width: min(100%, 450px);
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 5px;
+    margin: auto;
+}
+
+section#feedback .container form .field {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#feedback .container form .field input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+section#feedback .container form .field.textarea {
+    height: 250px;
+}
+
+section#feedback .container form .field.textarea textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+section#feedback .container form input[type=radio] {
+    display: none;
+}
+
+section#feedback .container form label {
+    font-size: 2rem;
+    margin: 10px;
+    cursor: pointer;
+    color: gold;
+}
+
+section#feedback .container form .field.rating input:checked + label ~ label {
+    color: #838383;
+}
+
+section#feedback .container form button {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section#feedback .container form button i {
+    font-size: 1.1rem;
 }
 
 /* footer */
