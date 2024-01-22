@@ -11,7 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    user-zoom: 0%;
+    /* user-zoom: 0%; */
+    user-select: none;
 }
 
 body {
@@ -45,12 +46,24 @@ section:last-child {
     margin-bottom: 0 !important;
 }
 
+section#hero.hero .primary-navigation {
+    height: 80px;
+    width: 98%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: var(--oxford-blue);
+    margin: 0 !important;
+}
+
 .primary-navigation {
     height: 80px;
     width: 98%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* border: 1px solid white; */
     border-radius: 40px;
     display: flex;
@@ -111,12 +124,10 @@ section:last-child {
     padding: 7px 10px;
     transition: 0.3s background, color 0.3s;
     border-radius: 5px;
-    /* font-weight: 300; */
 }
 
 .primary-navigation .menu li a:hover {
-    background: var(--white);
-    color: var(--oxford-blue);
+    color: var(--red-cmyk);
 }
 
 @media (max-width: 659px) {
@@ -212,6 +223,28 @@ section:last-child {
     border-radius: 4px;
 }
 
+section#hero {
+    padding: 20px 0;
+}
+
+section#hero.home {
+    background: url(../assets/images/background_01.jpg) #00000090;
+    background-blend-mode: multiply;
+    /* padding: 20px 0; */
+    height: min(500px, 100%);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+section#hero.home .hero {
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 section#hero .hero {
     min-height: 45vh;
     /* background: black; */
@@ -230,7 +263,6 @@ section#hero .hero .container {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    /* width: min(100%, 500px); */
     padding: 10px;
     gap: 20px;
 }
@@ -257,6 +289,7 @@ section#hero .hero .container p {
     width: min(100%, 850px);
     margin: auto;
     font-weight: 300;
+    font-size: 18px;
 }
 
 section#hero .hero .container .buttons {
@@ -294,18 +327,20 @@ section#product-category .card-container {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     width: min(100%, 1100px);
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px auto;
 }
 
 section#product-category .card {
     width: 200px;
     height: 140px;
     background: var(--red-cmyk);
-    margin: 20px;
+    /* margin: 20px; */
     padding: 10px;
     border-radius: 4px;
     display: grid;
