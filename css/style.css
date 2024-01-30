@@ -48,7 +48,9 @@ section {
     margin-bottom: 30px;
 }
 
-section:last-child {
+section:last-child,
+section:first-child,
+section:nth-child(2) {
     margin-bottom: 0 !important;
 }
 
@@ -237,7 +239,7 @@ section#hero.home {
     background: url(../assets/images/background_01.jpg) #00000090;
     background-blend-mode: multiply;
     /* padding: 20px 0; */
-    height: min(500px, 100%);
+    height: min(650px, 100%);
     background-repeat: none;
     background-size: cover;
     background-position: center;
@@ -329,6 +331,26 @@ section#hero .hero .container .buttons a:hover {
 }
 
 /* product category section */
+section#product-category {
+    background: url('../assets/images/background_02.jpeg');
+    padding: 30px 0;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#product-category h2 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
 section#product-category .card-container {
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
@@ -339,7 +361,7 @@ section#product-category .card-container {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin: 20px auto;
+    margin: 15px auto 0 auto;
 }
 
 section#product-category .card {
