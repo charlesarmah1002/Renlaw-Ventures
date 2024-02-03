@@ -857,9 +857,13 @@ section#profiles .container {
 }
 
 #products .products-container .product {
-    width: 300px;
+    width: 200px;
     border: 1px solid grey;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+#products .products-container .product h4 {
+    font-weight: 300;
 }
 
 #products .products-container .product .image-container {
@@ -877,17 +881,4 @@ section#profiles .container {
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-
-#products .products-container .product .sizes {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-#products .products-container .product .sizes li{
-    background: #00000050;
-    padding: 5px;
 }
