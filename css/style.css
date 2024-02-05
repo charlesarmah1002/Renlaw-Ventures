@@ -870,7 +870,7 @@ section#profiles .container {
     margin: auto;
 }
 
-#products .products-container .product:not(:hover) h4 {
+#products .products-container .product h4 {
     font-weight: 300;
     /* font-size: 1.2rem; */
     overflow: hidden;
@@ -880,10 +880,10 @@ section#profiles .container {
     height: 50px;
 }
 
-#products .products-container .product:hover {
-    /* scale: 1.1; */
+/* #products .products-container .product:hover {
+    scale: 1.1;
     transition: 0.3s;
-}
+} */
 
 #products .products-container .product:hover h4 {
     font-weight: 300;
