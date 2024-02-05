@@ -881,7 +881,8 @@ section#profiles .container {
 }
 
 #products .products-container .product:hover {
-    scale: 1.1;
+    /* scale: 1.1; */
+    transition: 0.3s;
 }
 
 #products .products-container .product:hover h4 {
