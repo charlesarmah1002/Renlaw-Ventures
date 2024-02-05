@@ -333,7 +333,8 @@ section#hero .hero .container .buttons a:hover {
 
 /* product category section */
 section#product-category {
-    background: url('../assets/images/background_02.jpeg');
+    /* background: url('../assets/images/background_02.jpeg'); */
+    background: white;
     padding: 30px 0;
     color: white;
     background-size: cover;
