@@ -885,6 +885,12 @@ section#profiles .container {
 
 #products .products-container .product:hover h4 {
     font-weight: 300;
+    max-lines: 1;
+    text-align: left;
+    /* text-wrap: elipses; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #products .products-container .product .image-container {
@@ -894,6 +900,7 @@ section#profiles .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 7px;
 }
 
 #products .products-container .product .image-container img {
