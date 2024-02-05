@@ -867,7 +867,7 @@ section#profiles .container {
     /* border-radius: 7px; */
     padding: 10px;
     transition: 0.3s;
-    margin: auto;
+    /* margin: auto; */
 }
 
 #products .products-container .product h4 {
